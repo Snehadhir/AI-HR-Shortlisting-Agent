@@ -6,6 +6,13 @@ An AI agent prototype that assists HR teams in evaluating candidates efficiently
 
 ---
 
+## 📊 Project Presentation
+
+Download the complete project presentation here:
+[📥 AI HR Shortlisting Agent PPT](docs/AI_HR_Shortlisting_Agent.pptx)
+
+---
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
@@ -133,20 +140,22 @@ Step 8 — HUMAN OVERRIDE
 | Speed | Fast on CPU | Fast (API) | Fast (API) |
 | Offline | ✅ Yes | ❌ No | ❌ No |
 
-**Why Qwen2.5:1.5b over GPT-4o/Claude:**
+**Why Qwen2.5:1.5b over GPT-4o / Claude:**
+
 - Resume data contains **PII (personal identifiable information)**. Running locally ensures candidate data never leaves the machine — critical for HR compliance and GDPR considerations.
 - Zero API cost enables unlimited testing with sample resumes during development.
 - For a prototype/internship submission, local inference is sufficient for structured scoring tasks.
 - The scoring logic is deterministic (keyword matching + weighted calculation), so a smaller LLM handles the reasoning tasks adequately.
 
-**Trade-off acknowledged:** A larger model (GPT-4o, Claude 3.5) would produce richer natural language justifications and better semantic understanding. In production, a cloud LLM with PII masking would be recommended.
+> **Trade-off acknowledged:** A larger model (GPT-4o, Claude 3.5) would produce richer natural language justifications and better semantic understanding. In production, a cloud LLM with PII masking would be recommended.
 
 ---
 
 ## Prompt Design
 
 ### JD Parsing Prompt
-The JD parser uses a structured extraction prompt that instructs the model to return JSON with defined fields (title, required_skills, min_experience_years, domain). This prevents hallucination by constraining the output schema.
+
+The JD parser uses a structured extraction prompt that instructs the model to return JSON with defined fields (`title`, `required_skills`, `min_experience_years`, `domain`). This prevents hallucination by constraining the output schema.
 
 **Guardrails applied:**
 - Output forced to JSON schema — invalid responses are caught and defaulted
@@ -154,6 +163,7 @@ The JD parser uses a structured extraction prompt that instructs the model to re
 - Input length capped to prevent prompt injection via oversized JD files
 
 ### Scoring Reasoning Prompt
+
 The reasoning generator uses candidate profile fields + JD requirements to produce a one-paragraph summary. Fields are injected as structured variables, not raw user text, to prevent prompt injection.
 
 **Guardrails applied:**
@@ -208,17 +218,21 @@ ollama pull qwen2.5:1.5b
 ## Usage
 
 ### Step 1 — Start Ollama
+
 ```bash
 ollama run qwen2.5:1.5b
 ```
+
 Keep this terminal open.
 
 ### Step 2 — Run App
+
 ```bash
 streamlit run streamlit_app.py
 ```
 
 ### Step 3 — In the browser
+
 1. Upload Job Description (TXT / PDF / DOCX)
 2. Upload Resumes (PDF / DOCX / TXT) — multiple supported
 3. Upload LinkedIn files (JSON / PDF / TXT) — optional
@@ -239,10 +253,13 @@ streamlit run streamlit_app.py
 | Project / Portfolio | 20% | No evidence | 1–2 generic projects | Strong relevant portfolio |
 | Communication Quality | 10% | Poor structure/grammar | Adequate clarity | Crisp, structured, impactful |
 
-Recommendation thresholds:
-- **Hire** — total score ≥ 7.0
-- **Maybe** — total score ≥ 4.5
-- **No Hire** — total score < 4.5
+**Recommendation thresholds:**
+
+| Score | Recommendation |
+|---|---|
+| ≥ 7.0 | ✅ Hire |
+| ≥ 4.5 | 🟡 Maybe |
+| < 4.5 | ❌ No Hire |
 
 ---
 
@@ -252,6 +269,16 @@ See `sample_output/` folder for:
 - `shortlist_report.json` — full JSON report with dimension scores
 - `shortlist_report.txt` — human-readable ranked report
 - `shortlist_report.html` — HTML report
+
+**Example run — TechCorp India · Senior ML Engineer (5 candidates):**
+
+| Rank | Candidate | Score | Recommendation |
+|---|---|---|---|
+| #1 | Sneha Dhir | 8.15 / 10 | ✅ Hire |
+| #2 | Arjun Mehta | 7.25 / 10 | ✅ Hire |
+| #3 | Rahul Sharma | 6.95 / 10 | 🟡 Maybe |
+| #4 | Priya Nair | 6.19 / 10 | 🟡 Maybe |
+| #5 | Ravi Kumar | 5.00 / 10 | 🟡 Maybe |
 
 ---
 
@@ -264,6 +291,9 @@ AI-HR-Shortlisting-Agent/
 ├── requirements.txt
 ├── .env.example              # Environment variable template
 ├── README.md
+│
+├── docs/
+│   └── AI_HR_Shortlisting_Agent.pptx   # Project presentation
 │
 ├── llm/
 │   └── llm_engine.py         # Ollama LLM wrapper
@@ -298,7 +328,7 @@ AI-HR-Shortlisting-Agent/
 
 ## Author
 
-**Sneha Dhir**
+**Sneha Dhir**  
 B.Tech CSE (AI/ML) — UPES Dehradun
 
 ---

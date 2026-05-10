@@ -1,0 +1,26 @@
+{
+  "full_name": "Rahul Sharma",
+  "headline": "ML Engineer | Python | 4 Years Experience",
+  "location": "Bangalore, India",
+  "current_company": "TCS",
+  "summary": "ML Engineer with 4 years of experience building NLP and deep learning models.",
+  "total_experience_years": 4.0,
+  "skills": [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "NLP",
+    "BERT",
+    "AWS",
+    "SQL",
+    "scikit-learn",
+    "Docker"
+  ],
+  "certifications": [
+    "AWS Cloud Practitioner"
+  ],
+  "experience_text": "- ML Engineer at TCS (2021 - Present): Built text classification models using BERT and PyTorch. Deployed models on AWS SageMaker.\n- Data Analyst at Infosys (2020 - 2021): SQL, Python, data dashboards.",
+  "education_text": "B.Tech Computer Science, VIT University, 2020",
+  "projects_text": "- Resume Classifier: NLP model to classify resumes using BERT fine-tuning.\n- Sales Forecasting: LSTM-based time series model for retail sales prediction.",
+  "ai_generated_summary": "Rahul Sharma is an experienced ML Engineer with 4 years of experience in building NLP and deep learning models. He has worked at TCS and Infosys, where he has built text classification models using BERT and PyTorch and deployed them on AWS SageMaker. He is proficient in Python, PyTorch, TensorFlow, NLP, BERT, AWS, SQL, scikit-learn, Docker, and has certifications in AWS Cloud Practitioner."
+}

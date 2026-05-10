@@ -1,0 +1,30 @@
+{
+  "full_name": "Dev Batra",
+  "headline": "Computer Science student specializing in Artificial Intelligence and Machine Learning",
+  "location": "India",
+  "current_company": "Not specified",
+  "summary": "Computer Science student specializing in Artificial Intelligence and Machine Learning with hands-on experience in deep learning, NLP, and model optimization. Built projects using SBERT, LLMs, and transfer learning, achieving 99.92 accuracy in medical image classification and developing AI-driven evaluation systems.",
+  "total_experience_years": 0.0,
+  "skills": [
+    "Deep Learning",
+    "Natural Language Processing (NLP)",
+    "Model Optimization",
+    "Semantic Similarity",
+    "Contextual Answer Evaluation",
+    "Fact Verification",
+    "Multi-Stage Pipeline",
+    "Text Preprocessing",
+    "Embedding Generation",
+    "Similarity Scoring",
+    "Keyword Extraction",
+    "Explainable AI (XAI)",
+    "AI-based Assignment Evaluation System"
+  ],
+  "certifications": [
+    "Not specified"
+  ],
+  "experience_text": "Web Intern | Business Operations | CarDeckOut | New Delhi, India | Jun 2025 - Jul 2025 | Improved the company's online platform by updating 50+ product listings, refining car-wise content, and assisting in payment gateway integration, resulting in a more reliable and user-friendly buying experience. Enhanced platform performance through structured content updates and payment integration testing, strengthening system workflows and improving overall platform stability. Supported backend operations such as order tracking and dispatch coordination using Shiprocket, while contributing to Meta ad campaign optimization, resulting in a 2.3 increase in sales.",
+  "education_text": "University of Petroleum and Energy Studies (UPES) | Dehradun, India | B.Tech in Computer Science with Specialization in AIML | CGPA: 7.74 / 10 | Aug 2023 - Aug 2027",
+  "projects_text": "SYLVA (System for Your Learning Validation and Assessment) | AIML, NLP, LLM, RAG | Jan 2026 - Present | Building an AI-based assignment evaluation system using SBERT for semantic similarity, LLMs (API-based / pre-trained models) for contextual answer evaluation, and RAG for fact verification. Designed a multi-stage pipeline including text preprocessing, embedding generation, similarity scoring, keyword extraction, and Explainable AI (XAI) feedback generation. Integrated semantic similarity and rubric-based scoring to evaluate descriptions.",
+  "ai_generated_summary": "Computer Science student specializing in Artificial Intelligence and Machine Learning with hands-on experience in deep learning, NLP, and model optimization. Built projects using SBERT, LLMs, and transfer learning, achieving 99.92 accuracy in medical image classification and developing AI-driven evaluation systems."
+}

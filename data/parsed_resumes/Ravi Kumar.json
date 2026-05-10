@@ -1,0 +1,27 @@
+{
+  "full_name": "Ravi Kumar",
+  "headline": "Frontend Developer | React | JavaScript | 2 Years",
+  "location": "Chennai, India",
+  "current_company": "TCS",
+  "summary": "Frontend developer with 2 years of experience building web applications using React and JavaScript. Good understanding of HTML, CSS, and REST APIs. Looking to transition into a backend role.",
+  "total_experience_years": 2.0,
+  "skills": [
+    "React",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "REST APIs",
+    "Git",
+    "Figma",
+    "Bootstrap",
+    "jQuery",
+    "Node.js (basic)"
+  ],
+  "certifications": [
+    "Meta Frontend"
+  ],
+  "experience_text": "- Frontend Developer at TCS (2023 - Present): Built React dashboards for internal HR tools. Integrated REST APIs using JavaScript fetch and Axios. Fixed UI bugs and improved page load speed by 20%. - Intern at Zoho (2022 - 2023): Worked on HTML/CSS templates for email campaigns. Basic JavaScript scripting for form validation.",
+  "education_text": "B.E. in Information Technology, Anna University, 2022",
+  "projects_text": "- HR Dashboard: React-based internal tool for employee management. - Portfolio Website: Personal portfolio built with React and CSS.",
+  "ai_generated_summary": "Frontend developer with 2 years of experience in React and JavaScript, focusing on building web applications. Skilled in HTML, CSS, and REST APIs. Transitioning to backend role."
+}

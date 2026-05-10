@@ -1,0 +1,33 @@
+{
+  "full_name": "Aman Verma",
+  "headline": "AI Engineer | LLMs | RAG | LangChain",
+  "location": "Bangalore, India",
+
+  "summary": "AI Engineer with experience building LLM applications and RAG pipelines using LangChain and FastAPI.",
+
+  "experience": [
+    {
+      "company": "OpenAI Labs India",
+      "role": "AI Engineer",
+      "years": "2022-Present",
+      "description": "Built RAG systems using LangChain, FastAPI and Pinecone."
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "B.Tech AI/ML",
+      "college": "UPES"
+    }
+  ],
+
+  "skills": [
+    "Python",
+    "LangChain",
+    "RAG",
+    "FastAPI",
+    "Pinecone",
+    "LLMs",
+    "Docker"
+  ]
+}

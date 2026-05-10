@@ -1,0 +1,8 @@
+ollama
+requests
+PyMuPDF
+python-docx
+tabulate
+rich
+jinja2
+python-dotenv

@@ -1,0 +1,62 @@
+{
+  "linkedin_id": "aman-verma-ml",
+  "full_name": "Aman Verma",
+  "headline": "Senior ML Engineer | LLMs | RAG | LangChain | 6 Years",
+  "location": "Bangalore, India",
+  "current_company": "Google DeepMind India",
+  "summary": "Senior ML Engineer with 6 years building production LLM systems. Led RAG pipelines serving 10M queries/day. Expert in LangChain, LangGraph, MLOps and multi-agent systems.",
+  "experience": [
+    {
+      "company": "Google DeepMind India",
+      "title": "Senior ML Engineer",
+      "duration": "2022 – Present",
+      "description": "Built LLM agent platform using LangGraph and AutoGen. RAG pipeline on Pinecone and FastAPI. MLOps on Kubernetes with MLflow."
+    },
+    {
+      "company": "Microsoft Azure AI",
+      "title": "ML Engineer",
+      "duration": "2020 – 2022",
+      "description": "NLP pipelines using LangChain and HuggingFace. Deployed models on Azure ML with Docker and CI/CD."
+    },
+    {
+      "company": "Flipkart",
+      "title": "Junior ML Engineer",
+      "duration": "2019 – 2020",
+      "description": "Recommendation engine using collaborative filtering. Python, scikit-learn, SQL."
+    }
+  ],
+  "education": [
+    {
+      "institution": "IIT Bombay",
+      "degree": "M.Tech in Artificial Intelligence",
+      "year": 2019
+    }
+  ],
+  "skills": [
+    "Python", "PyTorch", "LangChain", "LangGraph",
+    "RAG", "LLMs", "MLflow", "Kubernetes", "Docker",
+    "FastAPI", "Pinecone", "FAISS", "HuggingFace",
+    "AWS SageMaker", "Prompt Engineering", "Fine-tuning"
+  ],
+  "certifications": [
+    "Google Professional ML Engineer",
+    "AWS Certified ML Specialist",
+    "Azure AI Engineer Associate"
+  ],
+  "projects": [
+    {
+      "name": "Enterprise LLM Agent Platform",
+      "description": "Multi-agent system using LangGraph serving Fortune 500 clients. 50M tokens/day in production.",
+      "tech": ["LangGraph", "AutoGen", "Pinecone", "FastAPI"]
+    },
+    {
+      "name": "Open Source RAG Toolkit",
+      "description": "800+ GitHub stars. Modular RAG framework supporting multiple vector stores.",
+      "tech": ["LangChain", "Pinecone", "FAISS", "Docker"]
+    }
+  ],
+  "publications": [
+    "NeurIPS 2022 — Efficient Attention Mechanisms for Edge Deployment"
+  ],
+  "recommendations_count": 15
+}

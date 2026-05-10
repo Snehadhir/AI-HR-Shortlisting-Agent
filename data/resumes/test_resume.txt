@@ -1,0 +1,22 @@
+Name: Rahul Sharma
+Headline: ML Engineer | Python | 4 Years Experience
+Location: Bangalore, India
+Current Company: TCS
+
+Summary:
+ML Engineer with 4 years of experience building NLP and deep learning models.
+
+Experience:
+- ML Engineer at TCS (2021 - Present): Built text classification models using BERT and PyTorch. Deployed models on AWS SageMaker.
+- Data Analyst at Infosys (2020 - 2021): SQL, Python, data dashboards.
+
+Education:
+- B.Tech Computer Science, VIT University, 2020
+
+Skills: Python, PyTorch, TensorFlow, NLP, BERT, AWS, SQL, scikit-learn, Docker
+
+Projects:
+- Resume Classifier: NLP model to classify resumes using BERT fine-tuning.
+- Sales Forecasting: LSTM-based time series model for retail sales prediction.
+
+Certifications: AWS Cloud Practitioner

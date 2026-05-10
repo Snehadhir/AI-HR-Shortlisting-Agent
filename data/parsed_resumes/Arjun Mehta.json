@@ -1,0 +1,22 @@
+{
+  "full_name": "Arjun Mehta",
+  "headline": "Senior ML Engineer | LLMs | RAG | LangChain | LangGraph | 6 Years",
+  "location": "Bangalore, India",
+  "current_company": "Google DeepMind India",
+  "summary": "Senior ML Engineer with 6 years of experience building production LLM systems. Led a team of 5 engineers delivering RAG pipelines and multi-agent systems at scale. Reduced manual effort by 60% through intelligent automation. Published 2 papers on efficient transformer architectures. Strong communicator with experience presenting to C-suite stakeholders.",
+  "total_experience_years": 6.0,
+  "skills": [
+    "Senior ML Engineer",
+    "LLMs",
+    "RAG",
+    "LangChain",
+    "LangGraph"
+  ],
+  "certifications": [
+    "Not specified"
+  ],
+  "experience_text": "- Designed and deployed LLM-based agent platform using LangGraph and AutoGen. Built RAG pipeline serving 10M+ queries/day using Pinecone and FastAPI. Led MLOps infrastructure on Kubernetes with MLflow model tracking. Mentored 5 junior engineers and led weekly architecture reviews.",
+  "education_text": "Not specified",
+  "projects_text": "Not specified",
+  "ai_generated_summary": "Senior ML Engineer with 6 years of experience in building production LLM systems. Led a team of 5 engineers in delivering RAG pipelines and multi-agent systems at scale. Reduced manual effort by 60% through intelligent automation. Published 2 papers on efficient transformer architectures. Strong communicator with experience presenting to C-suite stakeholders."
+}

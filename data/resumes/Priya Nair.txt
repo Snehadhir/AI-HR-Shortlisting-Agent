@@ -1,0 +1,38 @@
+Name: Priya Nair
+Headline: Data Scientist | Python | NLP | 3 Years Experience
+Location: Pune, India
+Current Company: Infosys
+
+Summary:
+Data Scientist with 3 years of experience in NLP and machine learning.
+Built text classification and sentiment analysis models. Familiar with
+Python and scikit-learn. Currently learning about LLMs and RAG systems
+through online courses. Good communicator with experience presenting
+findings to business stakeholders.
+
+Experience:
+- Data Scientist at Infosys (2022 - Present):
+  Built sentiment analysis model using BERT for customer feedback.
+  Created text classification pipeline using scikit-learn and Python.
+  Worked with SQL databases and created dashboards in Tableau.
+  Presented monthly reports to business team.
+
+- Junior Data Analyst at Wipro (2021 - 2022):
+  Data cleaning and preprocessing using Python and Pandas.
+  Built basic ML models for churn prediction.
+  Created visualisations using Matplotlib and Seaborn.
+
+Education:
+- B.Tech in Computer Science, Pune University, 2021
+
+Skills:
+Python, scikit-learn, BERT, NLP, SQL, Pandas, NumPy,
+Matplotlib, Tableau, Git, Basic PyTorch, HuggingFace (basic)
+
+Projects:
+- Customer Sentiment Analyser: BERT-based sentiment model for
+  e-commerce reviews. Achieved 84% accuracy.
+- Employee Churn Prediction: Logistic regression model for HR team.
+
+Certifications:
+- IBM Data Science Professional Certificate

@@ -1,0 +1,33 @@
+Name: Ravi Kumar
+Headline: Frontend Developer | React | JavaScript | 2 Years
+Location: Chennai, India
+Current Company: TCS
+
+Summary:
+Frontend developer with 2 years of experience building web applications
+using React and JavaScript. Good understanding of HTML, CSS, and REST APIs.
+Looking to transition into a backend role.
+
+Experience:
+- Frontend Developer at TCS (2023 - Present):
+  Built React dashboards for internal HR tools.
+  Integrated REST APIs using JavaScript fetch and Axios.
+  Fixed UI bugs and improved page load speed by 20%.
+
+- Intern at Zoho (2022 - 2023):
+  Worked on HTML/CSS templates for email campaigns.
+  Basic JavaScript scripting for form validation.
+
+Education:
+- B.E. in Information Technology, Anna University, 2022
+
+Skills:
+React, JavaScript, HTML, CSS, REST APIs, Git,
+Figma, Bootstrap, jQuery, Node.js (basic)
+
+Projects:
+- HR Dashboard: React-based internal tool for employee management.
+- Portfolio Website: Personal portfolio built with React and CSS.
+
+Certifications:
+- Meta Frontend Developer Certificate

@@ -1,0 +1,33 @@
+Senior Machine Learning Engineer – Conversational AI & LLMs
+
+Company: TechCorp India Pvt. Ltd.
+Location: Bangalore / Hyderabad (Hybrid)
+Experience Required: 4–7 years
+
+About the Role:
+We are looking for a Senior ML Engineer to join our Conversational AI team. You will design, build, and deploy large language model (LLM) powered systems including RAG pipelines, AI agents, and NLP APIs that serve millions of users.
+
+Key Responsibilities:
+- Design and implement LLM-based applications (RAG, agents, fine-tuning pipelines)
+- Lead technical design discussions and mentor junior engineers
+- Build and maintain MLOps infrastructure (model serving, monitoring, CI/CD for ML)
+- Collaborate cross-functionally with product and data teams
+- Publish internal technical documentation
+
+Required Skills:
+- Python (advanced), PyTorch or TensorFlow
+- LLMs: fine-tuning, prompt engineering, RAG, embeddings
+- LLM frameworks: LangChain, LlamaIndex, or equivalent
+- MLOps: MLflow, Kubernetes, Docker, CI/CD
+- Vector databases: Pinecone, Weaviate, or FAISS
+- APIs: FastAPI or equivalent
+
+Preferred Skills:
+- Experience with multi-agent systems (LangGraph, AutoGen, CrewAI)
+- Published research or open-source contributions in ML/NLP
+- Cloud: AWS SageMaker, Azure ML, or GCP Vertex AI
+
+Qualifications:
+- M.Tech or M.S. in CS, AI, or related field preferred
+- B.Tech considered with strong experience
+- 4+ years of industry experience in ML engineering

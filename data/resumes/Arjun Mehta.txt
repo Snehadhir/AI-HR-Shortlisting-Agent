@@ -1,0 +1,53 @@
+Name: Arjun Mehta
+Headline: Senior ML Engineer | LLMs | RAG | LangChain | LangGraph | 6 Years
+Location: Bangalore, India
+Current Company: Google DeepMind India
+
+Summary:
+Senior ML Engineer with 6 years of experience building production LLM systems.
+Led a team of 5 engineers delivering RAG pipelines and multi-agent systems at scale.
+Reduced manual effort by 60% through intelligent automation. Published 2 papers on
+efficient transformer architectures. Strong communicator with experience presenting
+to C-suite stakeholders.
+
+Experience:
+- Senior ML Engineer at Google DeepMind India (2022 - Present):
+  Designed and deployed LLM-based agent platform using LangGraph and AutoGen.
+  Built RAG pipeline serving 10M+ queries/day using Pinecone and FastAPI.
+  Led MLOps infrastructure on Kubernetes with MLflow model tracking.
+  Mentored 5 junior engineers and led weekly architecture reviews.
+
+- ML Engineer at Microsoft Azure AI (2020 - 2022):
+  Built NLP pipelines using LangChain, HuggingFace Transformers and PyTorch.
+  Deployed models on Azure ML with Docker and CI/CD pipelines.
+  Integrated vector search using FAISS and Weaviate.
+
+- Junior ML Engineer at Flipkart (2019 - 2020):
+  Built recommendation engine using collaborative filtering.
+  Python, scikit-learn, SQL, REST APIs.
+
+Education:
+- M.Tech in Artificial Intelligence, IIT Bombay, 2019
+- B.Tech in Computer Science, NIT Trichy, 2017
+
+Skills:
+Python, PyTorch, TensorFlow, LangChain, LangGraph, AutoGen, RAG,
+LLMs, GPT-4o, LLaMA 3, MLflow, Kubernetes, Docker, FastAPI,
+Pinecone, FAISS, Weaviate, Azure ML, AWS SageMaker, CI/CD,
+HuggingFace Transformers, Prompt Engineering, Fine-tuning, NLP
+
+Projects:
+- Enterprise LLM Agent Platform: Multi-agent system using LangGraph
+  serving Fortune 500 clients. Handles 50M tokens/day in production.
+- Open Source RAG Toolkit: 800+ GitHub stars. Modular RAG framework
+  supporting Pinecone, FAISS, and Weaviate backends.
+- Efficient Transformer: Published paper on 3x faster inference.
+
+Certifications:
+- Google Professional ML Engineer
+- AWS Certified ML Specialist
+- Azure AI Engineer Associate
+
+Publications:
+- NeurIPS 2022 — Efficient Attention Mechanisms for Edge Deployment
+- EMNLP 2021 — Retrieval Augmented Generation for Low Resource NLP

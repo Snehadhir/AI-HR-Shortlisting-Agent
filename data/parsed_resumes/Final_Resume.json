@@ -1,0 +1,24 @@
+{
+  "full_name": "Sneha Dhir",
+  "headline": "AI/ML Engineer",
+  "location": "India",
+  "current_company": "Elevate Lab",
+  "summary": "AI/ML engineer specialising in LLM-based agentic systems, RAG pipelines, and NLP with 4 production-grade end-to-end projects and a proven track record of 30-60 efficiency gains. Skilled in backend development, semantic search, and voice AI experienced in reducing manual effort through intelligent automation across grading, sales, and voice domains.",
+  "total_experience_years": 0.0,
+  "skills": [
+    "Programming Languages: Python, Java, JavaScript, C",
+    "LLM Agentic AI: LangGraph, LangChain, RAG, GPT-4o, LLaMA 3.3, Groq, Agentic AI",
+    "NLP ML: BERT, MiniLM, SBERT, Transformers, XAI, NLP, Text Classification",
+    "Backend: FastAPI, Flask, Spring Boot, REST APIs, Microservices, Pydantic, Uvicorn, JDBC",
+    "Databases: MongoDB, MySQL",
+    "Cloud Tools: Microsoft Azure",
+    "Technical Skills: Programming Languages, LLM Agentic AI, NLP ML, Backend, Databases, Cloud Tools"
+  ],
+  "certifications": [
+    "Not specified"
+  ],
+  "experience_text": "Software Development Intern",
+  "education_text": "B.Tech in Computer Engineering, Specialisation: AI/ML",
+  "projects_text": "SYLVA AI Assignment Evaluation System",
+  "ai_generated_summary": "Sneha Dhir is an AI/ML engineer with a focus on LLM-based agentic systems, RAG pipelines, and NLP. She has 4 production-grade end-to-end projects and a proven track record of 30-60 efficiency gains. Skilled in backend development, semantic search, and voice AI, she has reduced manual effort through intelligent automation across grading, sales, and voice domains. She has experience in Python, Java, JavaScript, C, LangGraph, LangChain, RAG, GPT-4o, LLaMA 3.3, Groq, Agentic AI, BERT, MiniLM, SBERT, Transformers, XAI, NLP, Text Classification, FastAPI, Flask, Spring Boot, REST APIs, Microservices, Pydantic, Uvicorn, JDBC, MongoDB, MySQL, Microsoft Azure, and JUnit. She has authored JUnit test suites that reduced bug rate by 15."
+}

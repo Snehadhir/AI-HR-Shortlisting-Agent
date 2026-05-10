@@ -13,9 +13,17 @@ Download the complete project presentation here:
 
 ---
 
+## 🎬 Demo Video
+
+Watch the end-to-end agent demo here:
+[▶️ Watch Demo Video](https://drive.google.com/file/d/1j4ewsIRe2De6e7OIjYJNNVve6JWTCzTV/view?usp=sharing)
+
+---
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [Demo Video](#demo-video)
 - [Features](#features)
 - [Agent Architecture](#agent-architecture)
 - [Tech Stack & Decision Log](#tech-stack--decision-log)
@@ -328,7 +336,7 @@ AI-HR-Shortlisting-Agent/
 
 ## Author
 
-**Sneha Dhir**  
+**Sneha Dhir**
 B.Tech CSE (AI/ML) — UPES Dehradun
 
 ---

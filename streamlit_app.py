@@ -300,14 +300,23 @@ if run_button:
     reporter = ReportGenerator()
     report_paths = reporter.generate_all(ranked, jd)
 
-    # ─────────────────────────────────────────
-    # RESULTS — one card per candidate
-    # ─────────────────────────────────────────
+    # ── Persist results in session_state so reruns don't wipe them ──
+    st.session_state["ranked"] = ranked
+    st.session_state["report_paths"] = report_paths
+    st.session_state["pipeline_done"] = True
+
+
+# ─────────────────────────────────────────
+# RESULTS — rendered from session_state
+# (survives form submits and other reruns)
+# ─────────────────────────────────────────
+
+if st.session_state.get("pipeline_done"):
+
+    ranked = st.session_state["ranked"]
+    report_paths = st.session_state["report_paths"]
 
     st.markdown("## 🏆 Ranked Candidates")
-
-    # Track recruiter decisions for final summary table
-    recruiter_decisions = {}
 
     for i, r in enumerate(ranked, 1):
 
@@ -365,7 +374,7 @@ if run_button:
         # ── AI recommendation ──
         st.markdown(f"### 🤖 Recommendation: {r.recommendation}")
 
-        # ── Recruiter override ──
+        # ── Default index for selectbox ──
         if ats_score >= 75:
             default_index = 0
         elif ats_score >= 50:
@@ -373,40 +382,40 @@ if run_button:
         else:
             default_index = 2
 
-        decision = st.selectbox(
-            "👨‍💼 Recruiter Decision",
-            ["Shortlist", "Hold", "Reject"],
-            index=default_index,
-            key=f"decision_{i}"
-        )
+        # ── Recruiter form ──
+        with st.form(key=f"recruiter_form_{i}"):
+            decision = st.selectbox(
+                "👨‍💼 Recruiter Decision",
+                ["Shortlist", "Hold", "Reject"],
+                index=default_index,
+                key=f"decision_{i}"
+            )
+            notes = st.text_area(
+                "📝 Recruiter Notes",
+                placeholder="Add recruiter comments here...",
+                key=f"notes_{i}"
+            )
+            submitted = st.form_submit_button("✅ Save Recruiter Decision")
+            if submitted:
+                # Save explicitly so summary table survives future reruns
+                st.session_state[f"saved_decision_{i}"] = decision
+                st.session_state[f"saved_notes_{i}"] = notes
+                st.success(f"Decision saved for {r.candidate_name}")
 
-        notes = st.text_area(
-            "📝 Recruiter Notes",
-            placeholder="Add recruiter comments here...",
-            key=f"notes_{i}"
-        )
-
-        # Store for summary table
-        recruiter_decisions[i] = {"decision": decision, "notes": notes}
-
-        # ── Detailed Analysis — INSIDE the loop, per candidate ──
+        # ── Detailed Analysis ──
         with st.expander(f"📋 View Detailed Analysis — {r.candidate_name}"):
 
             st.markdown("## 📄 Candidate Summary")
             st.write(r.final_reasoning)
             st.markdown("---")
 
-            # ── Dimension-wise scoring table with justifications ──
             st.markdown("## 📊 Dimension-wise Scoring")
 
-            # r.dimension_scores is a list of DimensionScore dataclass objects
-            # Fields: key, label, weight (float), raw_score, weighted_score, justification
             dim_source = getattr(r, "dimension_scores", None)
 
             if dim_source and isinstance(dim_source, list) and len(dim_source) > 0:
                 dim_rows = []
                 for dim in dim_source:
-                    # DimensionScore is a dataclass — use dot notation, not .get()
                     dim_rows.append({
                         "Dimension":     dim.label,
                         "Weight":        f"{int(dim.weight * 100)}%",
@@ -427,27 +436,32 @@ if run_button:
             st.dataframe(score_df, use_container_width=True)
             st.markdown("---")
 
-            # ── Summary line ──
+            saved_decision = st.session_state.get(f"saved_decision_{i}", decision)
+            saved_notes    = st.session_state.get(f"saved_notes_{i}", notes)
+
             col_a, col_b = st.columns(2)
             with col_a:
                 st.markdown(f"**🤖 AI Recommendation:** {r.recommendation}")
                 st.markdown(f"**📊 ATS Score:** {ats_score}%")
             with col_b:
-                st.markdown(f"**👨‍💼 Recruiter Decision:** {decision}")
-                if notes:
-                    st.markdown(f"**📝 Notes:** {notes}")
+                st.markdown(f"**👨‍💼 Recruiter Decision:** {saved_decision}")
+                if saved_notes:
+                    st.markdown(f"**📝 Notes:** {saved_notes}")
 
         st.markdown("---")
 
     # ─────────────────────────────────────────
-    # FINAL SUMMARY TABLE (outside loop)
+    # FINAL SUMMARY TABLE
     # ─────────────────────────────────────────
 
     st.header("📋 Final Recruiter Decisions")
 
     summary_data = []
     for i, r in enumerate(ranked, 1):
-        rec_dec = st.session_state.get(f"decision_{i}", "Not Selected")
+        rec_dec = st.session_state.get(
+            f"saved_decision_{i}",
+            st.session_state.get(f"decision_{i}", "Not Selected")
+        )
         summary_data.append({
             "Rank":               i,
             "Candidate":          r.candidate_name,
